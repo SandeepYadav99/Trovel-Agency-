@@ -4968,46 +4968,19 @@ ol.comment-list li .children li {
         margin-left: 0px;
     }
 }
+
+/* GET TO KNOW US */
 .about-three {
     position: relative;
     padding: 120px 0;
 }
-.animated {
-    animation-duration: 1.25s;
-}
-.about-three__content {
-    position: relative;
-}
-.about-three__content .sec-title {
-    margin-bottom: 20px;
-}
-.sec-title__tagline {
-    font-size: var(--trevlo-size-xl, 14px);
-    color: var(--trevlo-base, #FF5956);
-    line-height: 0.9;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    margin-bottom: 11px;
-}
+
 h5, h6 {
     font-family: var(--trevlo-font, "DM Sans", sans-serif);
     color: var(--trevlo-primary, #2D2330);
     font-weight: 700;
-}
-h5, h6 {
     clear: both;
 }
-.sec-title__title, .sec-title__heading {
-    font-size: var(--trevlo-size-8xl, 40px);
-    line-height: 1.25;
-    margin-bottom: 0;
-}
-.elementor a {
-    box-shadow: none;
-    text-decoration: none;
-}
-
-
 
 
 .about-three__image__right {
@@ -5066,9 +5039,18 @@ h5, h6 {
     margin: -22px auto 18px;
 }
 
-.icon-telephone-call-1:before {
+/* .icon-telephone-call-1:before {
     content: "\e925";
     font-family: 'icomoon' !important;
+} */
+.icon-telephone-call-1 {
+    background-image: url('../img//download.png');
+    background-size: cover;
+    width: 24px; 
+    height: 24px;
+    border-radius: 24px;
+    display: inline-block; 
+    background-color: gray !important;
 }
 .about-three__info__icon span {
     display: block;
@@ -5088,5 +5070,28 @@ h5, h6 {
     text-align: center;
     margin-left: auto;
     padding: 12px 14px;
-    margin-top: 5% ;
+    margin-top: 10% ;
+    margin-right: -20px ;
 }
+.about-three__image__one {
+    position: relative;
+    margin-left: 38px;
+}
+.about-three__image__one img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+   
+}
+.about-three__content__quote {
+    background-color: var(--trevlo-white2, #cbedf5);
+    color: var(--trevlo-primary, #2D2330);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 34px;
+    border-radius: 10px;
+    padding: 22px 30px 23px 40px;
+}
+/* GET TO KNOW US End */
