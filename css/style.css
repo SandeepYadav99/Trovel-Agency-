@@ -1713,6 +1713,8 @@ hr {
 }
 .about-img1 .img {
   aspect-ratio: 16/1;
+  /* width: 150%;
+  height: ; */
 }
 .about .about-img {
   position: relative;
@@ -5040,6 +5042,11 @@ h6 {
 .about-three__image {
 }
 
+.about-three__image1 {
+  position: relative;
+  bottom: 30px;
+
+}
 .about-three__image__right {
   position: relative;
   margin-top: -307px;
@@ -5070,7 +5077,7 @@ h6 {
   position: relative;
   /* left: -10px; */
   
-  bottom: 225px;
+  bottom: 265px;
 }
 .dflex {
   gap: 20px;
@@ -5187,7 +5194,7 @@ h6 {
   margin-left: 38px;
 }
 .about-three__image__one1 {
-  position: absolute;
+  /* position: absolute; */
   /* margin-left: 30px; */
 }
 .about-three__image__one1 img {
