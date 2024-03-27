@@ -334,10 +334,20 @@ blockquote cite:before {
 }
 .position-re {
   position: relative;
+  width: fit-content;
+
+height: fit-content;
 }
 .position-re1 {
   position: relative;
-  aspect-ratio: 9/6 auto;
+  aspect-ratio: 16/11 auto;
+
+
+}
+.position-re4 {
+  position: relative;
+  aspect-ratio: 16/5 auto;
+  background-size: cover;
 }
 .full-width {
   width: 100%;
@@ -761,6 +771,9 @@ blockquote cite:before {
 }
 .section-padding2 {
   padding: 0 0 70px 0;
+}
+.section-padding3 {
+  padding: 10px 0 60px 0;
 }
 .section-padding h6 {
   color: #2095ae;
@@ -5043,10 +5056,12 @@ h6 {
 }
 
 .about-three__image1 {
-  position: relative;
-  bottom: 30px;
+  position: absolute;
+  bottom: -255px;
 
 }
+
+
 .about-three__image__right {
   position: relative;
   margin-top: -307px;
@@ -5077,8 +5092,24 @@ h6 {
   position: relative;
   /* left: -10px; */
   
-  bottom: 265px;
+  bottom: -30px;
 }
+@media screen and (max-width:1200px) {
+  .about-three__image1{
+   bottom: 10px;
+    position: relative;
+  }
+  .about-three__info1{
+    bottom: 280px;
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+  .our_about{
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .dflex {
   gap: 20px;
 }
@@ -5300,4 +5331,13 @@ h6 {
     border-radius: 24px;
     display: inline-block;
     background-color: #2095ae !important;
+  }
+
+  .bg-plan{
+    background: url("../img/customer//plan_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+
+
   }
