@@ -337,6 +337,10 @@ blockquote cite:before {
 .position-re {
     position: relative;
 }
+.position-re1 {
+    position: relative;
+    aspect-ratio: 9/6 auto;
+}
 .full-width {
     width: 100%;
 }
@@ -1670,6 +1674,16 @@ hr {
 .about .about-img img:hover {
     transform: scale(0.95);
 }
+.about-img1{
+position: relative;
+}
+.bgcolor{
+    background-color: #F4F5F8;
+}
+.about-img1 .img{
+    
+   aspect-ratio: 16/1;
+}
 .about .about-img {
     position: relative;
 }
@@ -2550,6 +2564,7 @@ hr.border-2 {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     z-index: 2;
+   /* cursor: pointer; */
 }
 .tours3 .square-flip:hover .square-container2 {
     -webkit-transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
@@ -4984,7 +4999,9 @@ h5, h6 {
     font-weight: 700;
     clear: both;
 }
-
+.about-three__image{
+ 
+}
 
 .about-three__image__right {
     position: relative;
@@ -5004,11 +5021,41 @@ h5, h6 {
     left: -96px;
     bottom: 65px;
 }
+.about-three__info1 {
+    z-index: 2;
+    display: inline-block;
+    max-width: 210px;
+    background-color:  #fff;
+    border-radius: 3px;
+    text-align: center;
+    padding:12px;
+    position: absolute;
+    left: -96px;
+    bottom: 65px;
+}
+
+.bgcolor{
+    background-color: #F4F5F8;
+}
 .about-three__info__title{
     color: var(--trevlo-white, #ffffff) !important;
     font-size: 15.493px;
     line-height: 23.24px;
     margin: 0 0 15px;
+}
+.about-three__info__title1{
+    color: var(--trevlo-white, #000) !important;
+    font-size: 15.493px;
+ 
+    margin: 0 0 5px;
+}
+.about-three__info__text1 {
+    color: var(--trevlo-white, #000);
+    font-size: 13.395px;
+    line-height: 1;
+    margin: 0 0 4px;
+    text-align: justify;
+    word-spacing: normal;
 }
 .about-three__info__text {
     color: var(--trevlo-white, #ffffff);
@@ -5079,6 +5126,17 @@ h5, h6 {
 .about-three__image__one {
     position: relative;
     margin-left: 38px;
+}
+.about-three__image__one1 {
+    position: relative;
+    margin-left: 30px;
+}
+.about-three__image__one1 img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+   
 }
 .about-three__image__one img {
     max-width: 100%;
