@@ -340,14 +340,17 @@ height: fit-content;
 }
 .position-re1 {
   position: relative;
-  aspect-ratio: 16/11 auto;
-
+  aspect-ratio: 16/11 ;
+ height: fit-content;
+  width: 160%;
 
 }
 .position-re4 {
   position: relative;
-  aspect-ratio: 16/5 auto;
-  background-size: cover;
+  aspect-ratio: 16/8 ;
+  width: 110%;
+  height: fit-content;
+
 }
 .full-width {
   width: 100%;
