@@ -2008,7 +2008,8 @@ hr {
 .destination1 .item .con {
   padding: 20px;
   position: absolute;
-  bottom: -45px;
+  bottom: -57px;
+  /* -45 */
   left: 0;
   width: 100%;
   -webkit-transition: all 0.3s;
@@ -5340,4 +5341,8 @@ h6 {
     display: inline-block;
 
 
+  }
+
+  .mtop{
+    bottom: 2rem;
   }
