@@ -52,7 +52,7 @@ $(function () {
             logo = $(".navbar .logo> img");
         if (bodyScroll > 100) {
             navbar.addClass("nav-scroll");
-            logo.attr('src', 'img/logo-dark.png');
+            logo.attr('src', 'img/logo-text-dark.png');
         } else {
             navbar.removeClass("nav-scroll");
             logo.attr('src', 'img/travel_logo@2x.png');
@@ -143,6 +143,29 @@ $(function () {
             },
             1000: {
                 items: 1
+            }
+        }
+    });
+
+    // Gallery
+    $('.gallery .owl-carousel').owlCarousel({
+        loop: true,
+        margin: 30,
+        mouseDrag: true,
+        autoplay: false,
+        dots: true,
+        nav: false,
+        navText: ["<span class='lnr ti-angle-left'></span>", "<span class='lnr ti-angle-right'></span>"],
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
             }
         }
     });
@@ -572,3 +595,28 @@ var form = $('.contact__form'),
             data: form_data
         }).done(done_func).fail(fail_func);
     });
+
+    // Floating FORM
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const letsChatLink = document.querySelector('.lets_chat');
+        const formSection = document.getElementById('formSection');
+    
+        letsChatLink.addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent default link behavior
+          formSection.style.display = (formSection.style.display === 'none' || formSection.style.display === '') ? 'block' : 'none'; // Toggle form section visibility
+        });
+        document.addEventListener('click', function(event) {
+            if (!formSection.contains(event.target) && !floatingButtons.contains(event.target)) {
+              formSection.style.display = 'none';
+            }
+          });
+          document.addEventListener('click', function(event) {
+            if (!letsChatLink.contains(event.target) && !letsChatLink.contains(event.target)) {
+              formSection.style.display = 'none';
+            }
+          });
+      });
+    
+    

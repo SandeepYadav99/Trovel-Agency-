@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>Travol Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="shortcut icon" href="img/favicon.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap">
     <link rel="stylesheet" href="css/plugins.css" />
@@ -39,18 +40,21 @@
             <!-- Menu -->
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item "> <a class="nav-link " href="index.html" >Home </a>
+                    <li class="nav-item "> <a class="nav-link  " href="index.html" >Home</a>
                      
                     </li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                     <li class="nav-item "> <a class="nav-link"  href="tours.html"  >Tours </a>
+                   <li class="nav-item "> <a class="nav-link"  href="IndianDestination.html" >Indian Destinations</a>
                        
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li>
-                    
-                    <li class="nav-item dropdown"> <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Pages <i class="ti-angle-down"></i></a>
+                    <li class="nav-item "> <a class="nav-link"  href="InternationalDestination.html" >International Destinations</a>
+                       
+                    </li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li> -->
+                       <li class="nav-item"><a class="nav-link" href="destination.html">Tours</a></li>
+                     <!-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Pages <i class="ti-angle-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="tour-details.html" class="dropdown-item active"><span>Tour Details</span></a></li>
+                            <li><a href="tour-details.html" class="dropdown-item"><span>Tour Details</span></a></li>
                             
                             <li><a href="post.html" class="dropdown-item"><span>Post Single</span></a></li>
                             <li class="dropdown-submenu dropdown"> <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" href="#"><span>Other Pages <i class="ti-angle-right"></i></span></a>
@@ -60,7 +64,7 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
+                    </li> --> 
                     <li class="nav-item"><a class="nav-link " href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <!-- <li class="nav-item "> <a class="nav-link"  href="terms-conditions.html"  >Terms & Conditions </a></li> -->
@@ -169,7 +173,7 @@
                     <br>
                     <!-- FAQ's -->
                     <h6>Tour Plan</h6>
-                    <ul class="accordion-box clearfix">
+                    <ul class="accordion-boxx clearfix">
                         <li class="accordion block">
                             <div class="acc-btn">Day 1: Departure</div>
                             <div class="acc-content">
@@ -178,30 +182,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="accordion block">
-                            <div class="acc-btn">Day 2: Adventure Beggins</div>
-                            <div class="acc-content">
-                                <div class="content">
-                                    <div class="text">Travel non lorem ac erat suscipit bibendum nulla facilisi. Sedeuter nunc volutpat miss sapien vel conseyen turpeutionyer masin libero sevenion vusetion viventa augue sit amet hendrerit vestibulum. Duisteyerion venenatis lacus gravida eros ut turpis interdum ornare.</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="accordion block">
-                            <div class="acc-btn">Day 3: Sea Tour</div>
-                            <div class="acc-content">
-                                <div class="content">
-                                    <div class="text">Travel non lorem ac erat suscipit bibendum nulla facilisi. Sedeuter nunc volutpat miss sapien vel conseyen turpeutionyer masin libero sevenion vusetion viventa augue sit amet hendrerit vestibulum. Duisteyerion venenatis lacus gravida eros ut turpis interdum ornare.</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="accordion block">
-                            <div class="acc-btn">Day 4: Return</div>
-                            <div class="acc-content">
-                                <div class="content">
-                                    <div class="text">Travel non lorem ac erat suscipit bibendum nulla facilisi. Sedeuter nunc volutpat miss sapien vel conseyen turpeutionyer masin libero sevenion vusetion viventa augue sit amet hendrerit vestibulum. Duisteyerion venenatis lacus gravida eros ut turpis interdum ornare.</div>
-                                </div>
-                            </div>
-                        </li>
+                        
                     </ul>
                 </div>
                 <!-- sidebar -->
@@ -243,6 +224,56 @@
             </div>
         </div>
     </section>
+       <!--Floating Form Section  -->
+       <section id="formSection">
+        <div class="right-sidebar item">
+
+            <form method="post" class="right-sidebar item-form contact__form" action="">
+                <!-- form message -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="" > Hey there, please provide your contact information below so we can reach out to you. </div>
+                    </div>
+                </div>
+                <!-- form elements -->
+                <div class="row">
+                   
+                    <div class="col-md-12 form-group">
+                        <input name="name" type="text" placeholder="Your Name *" required>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <input name="email" type="email" placeholder="Your Email *" required>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <input name="phone" type="text" placeholder="Your Number *" required>
+                    </div>
+                   
+                    
+                    <div class="col-md-12">
+                        <button class="butn-dark"><a href="#0"><span>Submit</span></a></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </section>
+
+    <section>
+        <div class="container">
+          <div class="containerFlot">
+            <a class="lets_chat" href="#" target="_blank">
+             
+                <i class="fas fa-comment my-float"></i>
+               
+              </a>
+            <a class="whats-app" href="#" target="_blank">
+              <i class="fab fa-whatsapp my-float"></i>
+            </a>
+           
+           
+            
+          </div>
+        </div>
+      </section>
     <!-- Testimonials -->
     <section class="testimonials">
         <div class="background bg-img bg-fixed section-padding pb-0" data-background="img/slider/15.jpg" data-overlay-dark="5">

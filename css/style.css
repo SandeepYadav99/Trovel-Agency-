@@ -336,21 +336,19 @@ blockquote cite:before {
   position: relative;
   width: fit-content;
 
-height: fit-content;
+  height: fit-content;
 }
 .position-re1 {
   position: relative;
-  aspect-ratio: 16/11 ;
- height: fit-content;
+  aspect-ratio: 16/11;
+  height: fit-content;
   width: 160%;
-
 }
 .position-re4 {
   position: relative;
-  aspect-ratio: 16/8 ;
+  aspect-ratio: 16/8;
   width: 110%;
   height: fit-content;
-
 }
 .full-width {
   width: 100%;
@@ -401,7 +399,7 @@ height: fit-content;
 }
 /* background & color */
 .bg-navy {
-  background: #0f2454;
+  /* background: #0f2454; */
 }
 .bg-lightnav {
   background: #f4f5f8;
@@ -816,10 +814,9 @@ height: fit-content;
   margin-bottom: 20px;
 }
 .section-title1 span {
-    color: #2095ae;
-  }
-.section-title
- span {
+  color: #2095ae;
+}
+.section-title span {
   color: #2095ae;
 }
 .section-title2 {
@@ -3745,11 +3742,11 @@ button.mfp-arrow {
 }
 
 /* ======= Accordion Box (for Faqs) style ======= */
-.accordion-box {
+.accordion-boxx {
   position: relative;
   padding: 0;
 }
-.accordion-box .block {
+.accordion-boxx .block {
   position: relative;
   background: #f4f5f8;
   border-radius: 0px;
@@ -3759,10 +3756,10 @@ button.mfp-arrow {
 .accordion-box .block.active-block {
   background-color: #f4f5f8;
 }
-.accordion-box .block:last-child {
+.accordion-boxx .block:last-child {
   margin-bottom: 0;
 }
-.accordion-box .block .acc-btn {
+.accordion-boxx .block .acc-btn {
   position: relative;
   font-size: 16px;
   line-height: 24px;
@@ -3774,11 +3771,14 @@ button.mfp-arrow {
   transition: all 500ms ease;
   font-family: "Poppins", sans-serif;
 }
-.accordion-box .block .acc-btn .count {
+.accordion-boxx .block .acc-btn .count {
   color: #2095ae;
   padding-right: 3px;
 }
-.accordion-box .block .acc-btn:before {
+.acc-content {
+  padding: 5px;
+}
+.accordion-boxx .block .acc-btn:before {
   position: absolute;
   right: 35px;
   top: 20px;
@@ -3787,17 +3787,17 @@ button.mfp-arrow {
   font-weight: normal;
   color: #2095ae;
   line-height: 30px;
-  content: "\e61a";
+  /* content: "\e61a"; */
   font-family: "Themify";
   transition: all 500ms ease;
 }
-.accordion-box .block .acc-btn.active {
+.accordion-boxx .block .acc-btn.active {
   background-color: #f4f5f8;
   color: #2095ae;
 }
 .accordion-box .block .acc-btn.active:before {
   color: "Themify";
-  content: "\e622";
+  /* content: "\e622"; */
 }
 .accordion-box .block .acc-content {
   position: relative;
@@ -3884,9 +3884,10 @@ button.mfp-arrow {
   overflow: hidden;
   -webkit-transition: 0.2s cubic-bezier(0.3, 0.58, 0.55, 1);
   transition: 0.2s cubic-bezier(0.3, 0.58, 0.55, 1);
-  bottom: -90px;
+  bottom: -70px;
   position: relative;
   background: #fff;
+  box-shadow: 0px 2px 10px #00000029;
 }
 .blog .item .con .category {
   font-family: "Barlow", sans-serif;
@@ -5062,9 +5063,7 @@ h6 {
 .about-three__image1 {
   position: absolute;
   bottom: -255px;
-
 }
-
 
 .about-three__image__right {
   position: relative;
@@ -5095,20 +5094,20 @@ h6 {
   padding: 13px;
   position: relative;
   /* left: -10px; */
-  
+
   bottom: -30px;
 }
-@media screen and (max-width:1200px) {
-  .about-three__image1{
-   bottom: 10px;
+@media screen and (max-width: 1200px) {
+  .about-three__image1 {
+    bottom: 10px;
     position: relative;
   }
-  .about-three__info1{
+  .about-three__info1 {
     bottom: 280px;
     margin-left: 30px;
     margin-right: 20px;
   }
-  .our_about{
+  .our_about {
     width: 100%;
     text-align: center;
   }
@@ -5177,18 +5176,18 @@ h6 {
   margin: -22px auto 18px;
 }
 .about-three__info__icon1 {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    border: 5px solid var(--trevlo-white, #ffffff);
-    background-color: var(--trevlo-primary, #2095ae);
-    font-size: 18px;
-    color: var(--trevlo-white, #ffffff);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: -32px 5px 0 10px;
-  }
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 5px solid var(--trevlo-white, #ffffff);
+  background-color: var(--trevlo-primary, #2095ae);
+  font-size: 18px;
+  color: var(--trevlo-white, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -32px 5px 0 10px;
+}
 
 /* .icon-telephone-call-1:before {
     content: "\e925";
@@ -5309,43 +5308,172 @@ h6 {
 /* 
  */
 
- .icon-telephone-call-2 {
-    background-image: url("../img/customer/best_price@2x.png");
-    background-size: cover;
-    width: 34px;
-    height: 34px;
-    border-radius: 24px;
-    display: inline-block;
-    background-color: #2095ae !important;
-  }
-  .icon-telephone-call-3 {
-    background-image: url("../img/customer/installments@2x.png");
-    background-size: cover;
-    width: 34px;
-    height: 34px;
-    border-radius: 24px;
-    display: inline-block;
-    background-color: #2095ae !important;
-  }
-  .icon-telephone-call-4 {
-    background-image: url("../img/customer/support@2x.png");
-    background-size: cover;
-    width: 34px;
-    height: 34px;
-    border-radius: 24px;
-    display: inline-block;
-    background-color: #2095ae !important;
-  }
+.icon-telephone-call-2 {
+  background-image: url("../img/customer/best_price@2x.png");
+  background-size: cover;
+  width: 34px;
+  height: 34px;
+  border-radius: 24px;
+  display: inline-block;
+  background-color: #2095ae !important;
+}
+.icon-telephone-call-3 {
+  background-image: url("../img/customer/installments@2x.png");
+  background-size: cover;
+  width: 34px;
+  height: 34px;
+  border-radius: 24px;
+  display: inline-block;
+  background-color: #2095ae !important;
+}
+.icon-telephone-call-4 {
+  background-image: url("../img/customer/support@2x.png");
+  background-size: cover;
+  width: 34px;
+  height: 34px;
+  border-radius: 24px;
+  display: inline-block;
+  background-color: #2095ae !important;
+}
 
-  .bg-plan{
-    background: url("../img/customer//plan_bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-block;
+.bg-plan {
+  background: url("../img/customer//plan_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
 
+.mtop {
+  bottom: 2rem;
+}
 
-  }
+/* Foting Button */
 
-  .mtop{
-    bottom: 2rem;
-  }
+.lets_chat {
+  position: fixed !important;
+  width: 60px !important;
+  height: 60px;
+  bottom: 100px !important;
+  right: 10% !important;
+  background-color: #fff !important;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.lets_chat:hover {
+  width: 160px;
+}
+
+.lets_chat:hover::after {
+  /* content: "LETS CHAT"; */
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 65px;
+  width: 120px;
+  /* height: 60px; */
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+
+  transition: right 0.3s ease;
+  font-size: 14px;
+  font-weight: bold !important;
+  /* border-radius: 14px !important; */
+  border-radius: 4px;
+  padding: 10px 5px;
+  margin-top: 10px;
+}
+
+.lets_chat:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 65px;
+  width: 120px;
+  /* height: 90%; */
+  background-color: #fff;
+  /* transform: rotate(45deg);  */
+  transition: right 0.3s ease;
+  border-radius: 5px;
+}
+
+.whats-app {
+  position: fixed !important;
+  width: 60px !important;
+  height: 60px;
+  bottom: 100px !important;
+  right: 5% !important;
+  background-color: #43c654 !important;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whats-app:hover {
+  width: 160px;
+}
+
+.whats-app:hover::after {
+  /* content: "WHATSAPP US"; */
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 65px;
+  width: 120px;
+  /* height: 60px; */
+  background-color: #43c654;
+  color: #fff;
+  text-align: center;
+
+  transition: right 0.3s ease;
+  font-size: 14px;
+  font-weight: bold !important;
+  /* border-radius: 14px !important; */
+  border-radius: 4px;
+  padding: 10px 5px;
+  margin-top: 10px;
+}
+
+.whats-app:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 65px;
+  width: 120px;
+  /* height: 90%; */
+  background-color: #43c654;
+  /* transform: rotate(45deg);  */
+  transition: right 0.3s ease;
+  border-radius: 5px;
+}
+.my-float {
+  margin-top: 16px;
+  color: #000;
+}
+
+#formSection {
+  position: fixed;
+  bottom: 140px;
+  right: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+ 
+  z-index: 999;
+  display: none;
+  width: 25%;
+  margin-top: -20px;
+}
+
+/* .containerFlot{
+background-color: white;
+} */
